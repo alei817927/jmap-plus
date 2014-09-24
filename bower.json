@@ -1,0 +1,31 @@
+{
+  "name": "jmap-plus",
+  "dependencies": {
+    "jquery": "2.1.1",
+    "jquery-mousewheel": "3.1.12"
+  },
+  "version": "1.3.1",
+  "authors": [
+    "alei <alei817927@gmail.com>"
+  ],
+  "description": "The new version of jvectormap",
+  "main": [
+    "dist/scripts/jquery-jmapplus.scripts" ,
+    "dist/scripts/jquery-jmapplus.styles"
+  ],
+  "keywords": [
+    "jvectormap",
+    "map",
+    "map",
+    "plugin"
+  ],
+  "license": "MIT",
+  "homepage": "http://u396.com/jvectormap",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
