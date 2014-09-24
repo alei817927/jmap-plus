@@ -16,21 +16,22 @@ jmap-plus
 
 ## 示例
 
-* example-1
-* example-2
-* example-3
-* example-4
-* example-5
+* [example-1](http://www.u396.com/wp-content/jmap-plus/example-1.html)
+* [example-2](http://www.u396.com/wp-content/jmap-plus/example-2.html)
+* [example-3](http://www.u396.com/wp-content/jmap-plus/example-3.html)
+* [example-4](http://www.u396.com/wp-content/jmap-plus/example-4.html)
+* [example-5](http://www.u396.com/wp-content/jmap-plus/example-5.html)
 
 ## 计划
 
-站在前人的肩上做了些工作，不敢藏而自用，便拿出来跟大家分享，在此也希望大家能提建议或者参与到开发中来，为开源项目做些贡献。由于没有权限在 `JVectorMap` 上提交更新，特新命名为 `jmap-plus`，`jmap` 为 `JVectorMap` 简写， `plus` 则表示在原来的基础上增加新内容。
+站在前人的肩上做了些工作，不敢藏而自用，便拿出来跟大家分享，在此也希望大家能提建议或者参与到开发中来，为开源项目做些贡献。由于没有权限在 `JVectorMap` 上提交更新，特新命名为 `jmap-plus`，`jmap` 为 `JVectorMap` 简写， `plus` 则表示在原来的基础上增加新内容。另外本项目版本号也延续了原项目。
 
 对于这个项目，短期计划：
 
 * 优化程序结构，继续保证浏览器兼容性。
 * 继续增加新的地图数据。
 * 增加新功能，比如支持鼠标点击、多类型标签展示等。
+* 逐渐完善相关文档。
 
 长期计划希望能够做成类似 `GeoServer` 这种即时请求的地图服务，展示多样化。
 
