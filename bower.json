@@ -10,14 +10,14 @@
   ],
   "description": "The new version of jvectormap",
   "main": [
-    "dist/scripts/jquery-jmapplus.scripts" ,
-    "dist/scripts/jquery-jmapplus.styles"
+    "./dist/assets/js/jquery-jmapplus.min.js" ,
+    "./dist/assets/css/jquery-jmapplus.min.css"
   ],
   "keywords": [
     "jvectormap",
     "map",
-    "map",
-    "plugin"
+    "geo",
+    "svg"
   ],
   "license": "MIT",
   "homepage": "http://u396.com/jvectormap",
