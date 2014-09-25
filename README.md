@@ -16,11 +16,11 @@ jmap-plus
 
 ## 示例
 
-* [example-1](http://www.u396.com/wp-content/jmap-plus/example-1.html)
-* [example-2](http://www.u396.com/wp-content/jmap-plus/example-2.html)
-* [example-3](http://www.u396.com/wp-content/jmap-plus/example-3.html)
-* [example-4](http://www.u396.com/wp-content/jmap-plus/example-4.html)
-* [example-5](http://www.u396.com/wp-content/jmap-plus/example-5.html)
+* [example-1](http://www.u396.com/wp-content/jmap-plus/examples/example-1.html)
+* [example-2](http://www.u396.com/wp-content/jmap-plus/examples/example-2.html)
+* [example-3](http://www.u396.com/wp-content/jmap-plus/examples/example-3.html)
+* [example-4](http://www.u396.com/wp-content/jmap-plus/examples/example-4.html)
+* [example-5](http://www.u396.com/wp-content/jmap-plus/examples/example-5.html)
 
 ## 计划
 
