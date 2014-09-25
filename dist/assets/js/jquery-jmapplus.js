@@ -2078,7 +2078,7 @@ jvm.WorldMap.prototype = {
         if (this.labels === undefined) {
           this.labels = [];
         }
-        this.labels[key] = jvm.$('<div/>').appendTo(jvm.$('body'));
+        this.labels[key] = jvm.$('<div/>').appendTo(this.container);
         this.labels[key].css(this.params.labelsStyle);
         this.labels[key].text(this.mapData.paths[key].name);
       }
