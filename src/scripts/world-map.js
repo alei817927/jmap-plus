@@ -745,11 +745,15 @@ jvm.WorldMap.prototype = {
       }
       var _left = _posPoint.x - this.labels[_key].width() / 2;
       var _top = _posPoint.y - this.labels[_key].height() / 2;
-      this.labels[_key].css({
-        left: _left,
-        top: _top
-      });
-      this.labels[_key].show();
+      if(_left < 0 || _left > this.width){
+        this.labels[_key].hide();
+      }else{
+        this.labels[_key].css({
+          left: _left,
+          top: _top
+        });
+        this.labels[_key].show();
+      }
     }
   },
   /**

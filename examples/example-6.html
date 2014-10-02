@@ -8,30 +8,39 @@
   <script src="http://www.u396.com/wp-includes/js/jquery/jquery.min.js"></script>
   <script src="http://www.u396.com/wp-includes/js/jquery/jquery.mousewheel.min.js"></script>
   <script src="http://www.u396.com/wp-content/jmap-plus/dist/assets/js/jquery-jmapplus.min.js"></script>
-  <script src="http://www.u396.com/wp-content/jmap-plus/dist/assets/data/world/jquery-jvectormap-world-mill-en.js"></script>
-  <script src="http://www.u396.com/wp-content/jvectormap/gdp-data.js"></script>
+  <script src="http://www.u396.com/wp-content/jmap-plus/dist/assets/data/china/jquery-jmapplus-region-js-mill-cn.js"></script>
 </head>
 <body style="margin:auto">
 <div id="world-map" style="width: 100%; height: 400px"></div>
 <script>
   $(function () {
     $('#world-map').height($(window).height());
-    $('#world-map').vectorMap({
-      map: 'world_mill_en',
-      series: {
-        regions: [
-          {
-            values: gdpData,
-            scale: ['#C8EEFF', '#0071A4'],
-            normalizeFunction: 'polynomial'
-          }
-        ]
+    var _focusRegion = ['35','40'];
+    var map = new jvm.WorldMap({
+      map: 'js_mill_cn',
+      container: $('#world-map'),
+      regionStyle: {
+        initial: {
+          'fill-opacity': 1,
+          stroke: 'none',
+          'stroke-width': 0,
+          'stroke-opacity': 1
+        },
+        hover: {
+          'fill-opacity': 0.8
+        },
+        selected: {
+          fill: '#f5d529'
+        },
+        selectedHover: {
+        }
       },
-      onRegionLabelShow: function (e, el, code) {
-        var _gdp = gdpData[code] == undefined ? 0 : gdpData[code];
-        el.html(el.html() + ' (GDP - ' + _gdp + ')');
+      showRegionLabel: true,
+      focusOn: {
+        scale: _focusRegion
       }
     });
+    map.setSelectedRegions(_focusRegion);
   });
 </script>
 </body>
