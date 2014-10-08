@@ -7,16 +7,15 @@ var gulp = require('gulp'),
   concat = require('gulp-concat'),
   notify = require('gulp-notify'),
   del = require('del');
-var cssDest = 'dist/assets/css',
-  jsDest = 'dist/assets/js';
+var dest = 'dist';
 gulp.task('styles', function () {
   return gulp.src('src/styles/**/*.css')
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
     .pipe(concat('jquery-jmapplus.css'))
-    .pipe(gulp.dest(cssDest))
+    .pipe(gulp.dest(dest))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
-    .pipe(gulp.dest(cssDest))
+    .pipe(gulp.dest(dest))
     .pipe(notify({ message: 'Styles task complete' }));
 });
 gulp.task('scripts', function () {
@@ -51,14 +50,14 @@ gulp.task('scripts', function () {
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
     .pipe(concat('jquery-jmapplus.js'))
-    .pipe(gulp.dest(jsDest))
+    .pipe(gulp.dest(dest))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .pipe(gulp.dest(jsDest))
+    .pipe(gulp.dest(dest))
     .pipe(notify({ message: 'Scripts task complete' }));
 });
 gulp.task('clean', function (cb) {
-  del([cssDest, jsDest], cb)
+  del([dest], cb)
 });
 gulp.task('default', ['clean'], function () {
   gulp.start('styles', 'scripts');
